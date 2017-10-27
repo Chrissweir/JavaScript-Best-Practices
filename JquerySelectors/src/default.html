@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a').css('background', 'red');
+            $('a').click(function(){
+                $(this).hide();
+                });
+            });
+
+        $(document).ready(function(){
+        $('table > tbody > tr').click(function(){
+            $(this).css('background', '#66FF00');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><a href="#" id="myLink">Acme Corporation</a></p>
+    <p><a href="#" id="A2">Acme Systems</a></p>
+    <p><a href="#" id="A3">About us</a></p>
+
+<table style="width:200px;border: 1px solid black;">
+    <tr>
+        <td id="C1R1" class="c1s1">C1 R1</td>
+        <td id="C2R1" class="c1s1">C2 R1</td>
+    </tr>
+    <tr>
+        <td id="C1R2" class="c1s2">C1 R2</td>
+        <td id="C2R2" class="c1s2">C2 R2</td>
+    </tr>
+    <tr>
+        <td id="C1R3" class="c1s3">C1 R3</td>
+        <td id="C2R3" class="c1s3">C2 R3</td>
+    </tr>
+</table>
+</body>
+</html>
